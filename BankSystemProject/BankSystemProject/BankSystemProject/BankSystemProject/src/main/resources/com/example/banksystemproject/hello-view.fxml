@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banksystemproject.helloViewController">
+   <children>
+      <ImageView fx:id="Background" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/BankingBackground.jpeg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <Text fill="WHITE" layoutX="7.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To AAM Bank Syestem!" wrappingWidth="275.1367130279541">
+         <font>
+            <Font name="Cooper Black" size="16.0" />
+         </font>
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.20999999344348907" green="0.1826999932527542" blue="0.1826999932527542" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+         <effect>
+            <Bloom threshold="0.5" />
+         </effect>
+      </Text>
+      <Button fx:id="Login_Button" alignment="CENTER" layoutX="18.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleLogin_Button" prefHeight="27.0" prefWidth="86.0" text="LOGIN">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="SignUP_Button" alignment="CENTER" layoutX="19.0" layoutY="339.0" mnemonicParsing="false" onAction="#handleSignUP_Button" prefHeight="27.0" prefWidth="85.0" text="SIGN UP">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

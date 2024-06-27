@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banksystemproject.SignUp_Continue_Controller">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="445.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/card.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="13.0" layoutY="14.0" text="Account Type :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="CheckingAccount_Radio" layoutX="103.0" layoutY="5.0" mnemonicParsing="false" text="Checking Account">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="toggel" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="SavingAccount_Radio" layoutX="103.0" layoutY="23.0" mnemonicParsing="false" text="Saving Account" toggleGroup="$toggel">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="14.0" layoutY="62.0" text="Card Type :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="Normal_Radio" layoutX="82.0" layoutY="71.0" mnemonicParsing="false" text="Normal ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="nope" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="VIP_Radio" layoutX="82.0" layoutY="53.0" mnemonicParsing="false" text="VIP" toggleGroup="$nope">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="InitializingBalance_TextField" layoutX="36.0" layoutY="117.0" prefHeight="0.0" prefWidth="84.0" />
+      <Button fx:id="Creat_Button" layoutX="9.0" layoutY="151.0" mnemonicParsing="false" onAction="#creatAccount" prefHeight="26.0" prefWidth="54.0" text="Create">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextArea layoutX="149.0" layoutY="293.0" prefHeight="82.0" prefWidth="237.0" />
+      <Label fx:id="Card_Id_label" layoutX="182.0" layoutY="307.0" text="Card Id : ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="AccountBalance_label" layoutX="182.0" layoutY="334.0" text="Account Balance :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="268.0" layoutY="357.0" text="THANKS!">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="Back_Button" layoutX="18.0" layoutY="188.0" mnemonicParsing="false" onAction="#handleLBack_Button" opacity="0.8" prefHeight="17.0" prefWidth="33.0">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <Label fx:id="accno_label" layoutX="249.0" layoutY="306.0" prefHeight="18.0" prefWidth="131.0" />
+      <ImageView fitHeight="14.0" fitWidth="26.0" layoutX="22.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Back-PNG-Image-Background-768x403.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

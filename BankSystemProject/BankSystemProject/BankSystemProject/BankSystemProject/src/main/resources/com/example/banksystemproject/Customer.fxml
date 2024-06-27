@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banksystemproject.CustomerController">
+   <children>
+      <SplitPane prefHeight="400.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="158.0" prefWidth="79.0">
+               <children>
+                  <ImageView fitHeight="171.0" fitWidth="194.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@images/Customer.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="14.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INFO :" wrappingWidth="61.96484375">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Text>
+                <AnchorPane layoutX="259.0" layoutY="23.0" minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="374.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" height="398.0" layoutX="-83.0" layoutY="-22.0" stroke="BLACK" strokeType="INSIDE" width="421.0" />
+                        <Button id="C" fx:id="CheckBalance_Button" layoutX="-51.0" layoutY="47.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="144.0" text="Check Balance">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="Balance_Label" layoutX="114.0" layoutY="50.0" prefHeight="32.0" prefWidth="206.0" text="Your Balance is : " textFill="WHITE" />
+                        <Button fx:id="Deposite_Button" layoutX="-51.0" layoutY="139.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="144.0" text="Deposite">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="Deposite_label" layoutX="114.0" layoutY="142.0" prefHeight="32.0" prefWidth="206.0" text="Ammount to deposit :" textFill="WHITE" />
+                        <Button fx:id="Withdraw_Button" layoutX="-51.0" layoutY="226.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="144.0" text="Withdraw">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="withdraw_label" layoutX="114.0" layoutY="226.0" prefHeight="32.0" prefWidth="206.0" text="Ammount to withdraw : " textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+                  <ImageView fitHeight="25.0" fitWidth="41.0" layoutX="4.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Back-PNG-Image-Background-768x403.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="Back_Button" layoutX="4.0" layoutY="2.0" mnemonicParsing="false" onAction="#handleLBack_Button" opacity="0.0" text="Back" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

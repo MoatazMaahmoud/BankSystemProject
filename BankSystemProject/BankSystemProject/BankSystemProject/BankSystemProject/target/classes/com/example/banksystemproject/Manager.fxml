@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banksystemproject.ManagerController">
+   <children>
+      <SplitPane dividerPositions="0.33121657754010686" prefHeight="400.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="376.0" prefWidth="195.0">
+               <children>
+                  <ImageView fitHeight="171.0" fitWidth="194.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@images/staff.jpg" />
+                     </image>
+                  </ImageView>
+                  <Line endX="448.20001220703125" endY="311.29290771484375" layoutX="-448.0" layoutY="-129.0" startX="643.2000122070312" startY="311.29290771484375" />
+                  <ImageView fitHeight="171.0" fitWidth="181.0" layoutX="6.0" layoutY="225.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@images/Analysis.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="Analysis_Button" layoutX="42.0" layoutY="192.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="111.0" text="ANALYSIS" textFill="#df0707">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Back_Button" layoutY="1.0" mnemonicParsing="false" onAction="#handleLBack_Button" prefHeight="26.0" prefWidth="28.0" textFill="#df0707">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Back-PNG-Image-Background-768x403.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="374.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="406.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" width="398.0" />
+                  <TextArea layoutX="-7.0" layoutY="184.0" prefHeight="222.0" prefWidth="207.0" />
+                  <TextArea layoutX="191.0" layoutY="184.0" prefHeight="222.0" prefWidth="214.0" />
+                  <Label layoutX="1.0" layoutY="201.0" prefHeight="18.0" prefWidth="34.0" text="Hire :" textFill="#f40909">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="6.0" layoutY="230.0" text="Name :">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="-1.0" layoutY="297.0" text="Phone Nu. :">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="7.0" layoutY="329.0" text="Address :">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Name_TextField" layoutX="57.0" layoutY="227.0" prefHeight="19.0" prefWidth="130.0" />
+                  <TextField fx:id="Phone_TextField" layoutX="78.0" layoutY="294.0" prefHeight="26.0" prefWidth="102.0" />
+                  <TextField fx:id="Adress_TextField" layoutX="70.0" layoutY="325.0" prefHeight="26.0" prefWidth="118.0" />
+                  <Button fx:id="Hire_Button" layoutX="44.0" layoutY="357.0" mnemonicParsing="false" onAction="#Hire" prefHeight="26.0" prefWidth="111.0" text="HIRE" textFill="#df0707">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="201.0" layoutY="201.0" prefHeight="18.0" prefWidth="34.0" text="Fire :" textFill="#f40909">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="208.0" layoutY="230.0" text="Id :">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Id_Fire_TextField" layoutX="233.0" layoutY="227.0" prefHeight="19.0" prefWidth="130.0" />
+                  <Label layoutX="243.0" layoutY="290.0" text="Thanks for your efforts!" />
+                  <Button fx:id="Fire_Button" layoutX="243.0" layoutY="257.0" mnemonicParsing="false" onAction="#Fire" prefHeight="26.0" prefWidth="111.0" text="FIRE" textFill="#df0707">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="243.0" layoutY="326.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="111.0" text="HELP" textFill="#df0707">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="243.0" layoutY="357.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="111.0" text="SYSTEM" textFill="#df0707">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Line endX="423.0" endY="311.29290771484375" layoutX="-419.0" layoutY="-132.0" startX="819.5" startY="311.29290771484375" stroke="#df0808" />
+                  <Line endX="423.0" endY="311.29290771484375" layoutX="-424.0" layoutY="-123.0" startX="819.5" startY="311.29290771484375" stroke="#df0808" />
+                  <Line endX="423.0" endY="311.29290771484375" layoutX="-424.0" layoutY="-122.0" startX="819.5" startY="311.29290771484375" stroke="#df0808" />
+                  <Line endX="423.0" endY="311.29290771484375" layoutX="-421.0" layoutY="-132.0" startX="819.5" startY="311.29290771484375" stroke="#df0808" />
+                  <ImageView fitHeight="185.0" fitWidth="398.0" layoutX="-2.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@images/System.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="423.0" endY="311.29290771484375" layoutX="-424.0" layoutY="-127.0" startX="819.5" startY="311.29290771484375" stroke="#df0808" />
+                  <Line endX="423.0" endY="311.29290771484375" layoutX="-425.0" layoutY="-124.0" startX="819.5" startY="311.29290771484375" stroke="#df0808" />
+                  <Label layoutX="8.0" layoutY="260.0" text="Salary:">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="salarytxt" layoutX="55.0" layoutY="257.0" prefHeight="26.0" prefWidth="118.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Line endX="401.5999755859375" endY="311.29290771484375" startX="600.5999755859375" startY="311.29290771484375" />
+      <Line endX="448.20001220703125" endY="311.29290771484375" layoutX="-448.0" layoutY="-125.0" startX="643.2000122070312" startY="311.29290771484375" />
+   </children>
+</AnchorPane>

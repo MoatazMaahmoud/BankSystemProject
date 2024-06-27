@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banksystemproject.SignUpController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Accountlogin.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="358.0" layoutY="28.0" text="First Name :" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="359.0" layoutY="69.0" text="Last Name :" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="FirstName_TextField" layoutX="438.0" layoutY="25.0" prefHeight="26.0" prefWidth="150.0" />
+      <TextField fx:id="LastName_TextField" layoutX="438.0" layoutY="66.0" prefHeight="26.0" prefWidth="150.0" />
+      <Label layoutX="360.0" layoutY="110.0" text="User Name :" textFill="WHITE" />
+      <TextField fx:id="UserName_TextField" layoutX="438.0" layoutY="106.0" />
+      <Label layoutX="373.0" layoutY="147.0" text="Password :" textFill="WHITE" />
+      <PasswordField fx:id="Password_TextField" layoutX="438.0" layoutY="143.0" />
+      <Label layoutX="388.0" layoutY="182.0" text="E-mail :" textFill="WHITE" />
+      <TextField fx:id="Email_TextField" layoutX="438.0" layoutY="178.0" />
+      <Label layoutX="371.0" layoutY="217.0" text="Phone Number :" textFill="WHITE" />
+      <TextField fx:id="PhoneNumber_TextField" layoutX="464.0" layoutY="213.0" prefHeight="26.0" prefWidth="124.0" />
+      <RadioButton fx:id="Male_Radio" layoutX="458.0" layoutY="254.0" mnemonicParsing="false" text="Male" textFill="WHITE" />
+      <RadioButton fx:id="Female_Radio" layoutX="458.0" layoutY="278.0" mnemonicParsing="false" text="Female" textFill="WHITE" />
+      <Label layoutX="414.0" layoutY="254.0" text="Sex :" textFill="WHITE" />
+      <Button fx:id="SignUp_Button" layoutX="453.0" layoutY="311.0" mnemonicParsing="false" onAction="#handleSignUp_Button" text="Sign Up" />
+      <Button fx:id="Back_Button" layoutX="463.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleLBack_Button" opacity="0.75" prefHeight="17.0" prefWidth="31.0">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Back-PNG-Image-Background-768x403.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="errorlabel" layoutX="230.0" layoutY="17.0" />
+   </children>
+</AnchorPane>
